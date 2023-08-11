@@ -12,7 +12,10 @@ function calcular()
 
     if(resultado)
     {
+        var operacao = resultado + '=' + eval(resultado);
+
         document.getElementById('resultado').innerHTML = eval(resultado);
+        addToHistorico(operacao);
     }
 }
 
@@ -29,3 +32,10 @@ function clean()
     document.getElementById('resultado').innerHTML = "";
 }
 
+function addToHistorico(operacao)
+{
+    var historico = document.getElementById('historico');
+    var historicoAtual = historico.innerHTML;
+    
+    historico.innerHTML = historicoAtual + operacao + '<br>';
+}

@@ -55,6 +55,18 @@ p{
     width: 25px;
 }
 
+details{
+    color: purple;
+}
+
+#historico{
+    background-color: white;
+    width: 90px;
+    height: 60px;
+    color: black;
+}
+
+
 
 
 
